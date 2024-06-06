@@ -1,4 +1,3 @@
-
 import sqlite3
 import pandas as pd
 
@@ -11,6 +10,5 @@ def calculate_correlations():
     correlations = pivot_df.corr()
     return correlations
 
-# Örnek kullanım
 correlations = calculate_correlations()
 print(correlations)
