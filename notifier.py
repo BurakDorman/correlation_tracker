@@ -1,12 +1,12 @@
-
 import telegram
+import asyncio
+from config import BOT_TOKEN, CHAT_ID
 
-def send_notification(message):
-    bot_token = '6959219060:AAG8nwCyk80bl_e3-mjNHiiPj2N0dcKNy2Y'
-    chat_id = 'YOUR_CHAT_ID'
-    bot = telegram.Bot(token=bot_token)
-    bot.send_message(chat_id=chat_id, text=message)
+async def send_notification(message):
+    bot = telegram.Bot(token=BOT_TOKEN)
+    await bot.send_message(chat_id=CHAT_ID, text=message)
 
 # Örnek kullanım
-message = "BTCUSDT %5 yükseldi, ETHUSDT hareket bekleniyor."
-send_notification(message)
+if __name__ == '__main__':
+    message = "Bot başlatıldı!"
+    asyncio.run(send_notification(message))
