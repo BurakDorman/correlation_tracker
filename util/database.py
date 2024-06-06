@@ -19,7 +19,7 @@ def initialize_db():
 
     conn.commit()
     conn.close()
-    print("Veritabanı ve tablolar başarıyla oluşturuldu.")
+    print("The database and all the tables have been initialized successfully.")
 
 if __name__ == '__main__':
     initialize_db()
