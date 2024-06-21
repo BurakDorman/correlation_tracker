@@ -1,4 +1,4 @@
-import requests
+import requests # type: ignore
 from config import BOT_TOKEN
 
 # With getUpdates method, all messages that the bot received.
