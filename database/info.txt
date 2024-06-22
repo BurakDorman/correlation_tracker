@@ -1,0 +1,1 @@
+util/database.py scriptini kullanmak veritabanini yaratir
